@@ -155,7 +155,7 @@ outerArcs.append("text")
 	.attr("startOffset","50%")
 	.style("text-anchor","middle")
 	.attr("xlink:href",function(d,i){return "#arc"+i;})
-	.text(function(d,i){ return Names[i]; });
+	.text(function(d,i){ return Names; });
 	
 ////////////////////////////////////////////////////////////
 ////////////////// Draw inner chords ///////////////////////
