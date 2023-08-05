@@ -152,7 +152,7 @@ outerArcs.append("text")
 	.attr("class", "titles")
 	.attr("dy", function(d,i) { return (d.endAngle > 90*Math.PI/180 & d.startAngle < 270*Math.PI/180 ? 25 : -16); })
    .append("textPath")
-	.attr("startOffset","50%")
+	.attr("startOffset","100%")
 	.style("text-anchor","middle")
 	.attr("xlink:href",function(d,i){return "#arc"+i;})
 	.text(function(d,i){ return Names[i]; });
