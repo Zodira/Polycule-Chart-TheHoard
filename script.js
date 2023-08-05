@@ -207,7 +207,7 @@ function mouseoverChord(d,i) {
 		content: function() { 
 			return "<p style='font-size: 11px; text-align: center;'><span style='font-weight:900'>" + Names[d.source.index] + 
 				   "</span> and <span style='font-weight:900'>" + Names[d.target.index] + 
-				   "</span> are in A relationship together. <span style='font-weight:900'>"; }
+				   "</span> are in A relationship together. <span style='font-weight:900'>" + d.source.value + "</span> movies </p>"; }
 	});
 	$(this).popover('show');
 }//mouseoverChord
