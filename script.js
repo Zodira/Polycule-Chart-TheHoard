@@ -149,7 +149,7 @@ outerArcs.append("path")
 //Append the label names on the outside
 outerArcs.append("text")
 	.attr("class", "titles")
-	.attr("dy", function(d,i) { return (d.endAngle > 0*Math.PI/180 & d.startAngle < 270*Math.PI/180 ? 25 : -16); })
+	.attr("dy", function(d,i) { return (d.endAngle > 90*Math.PI/180 & d.startAngle < 270*Math.PI/180 ? 25 : -16); })
    .append("textPath")
 	.attr("startOffset","50%")
 	.style("text-anchor","middle")
